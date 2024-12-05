@@ -8,4 +8,4 @@
 let initialArray = [1, 2, 3, 4, 5, 6];
 let mutatedArray = initialArray.map((value, index) => value * index);
 
-console.log(mutatedArray)
+console.log(mutatedArray);

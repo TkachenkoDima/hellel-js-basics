@@ -5,19 +5,19 @@
 
 //Common function
 function checkAge(age) {
-    if (age >= 18) {
-        return true;
-    } else {
-        return false;
-    }
+	if (age >= 18) {
+		return true;
+	} else {
+		return false;
+	}
 }
 console.log('Is person adult?', checkAge(25));
-console.log('Is person adult?',checkAge(15));
+console.log('Is person adult?', checkAge(15));
 console.log('----------');
 
-//Ternary operator  
+//Ternary operator
 function isAdult(age) {
-    return age >= 18 ? true : false;
+	return age >= 18 ? true : false;
 }
 console.log('Is person adult?', isAdult(25));
 console.log('Is person adult?', isAdult(15));

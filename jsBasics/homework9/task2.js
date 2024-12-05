@@ -6,13 +6,13 @@
 // Виведіть деструктуризовані змінні в консоль
 
 const book = {
-    title: 'The Gunslinger',
-    author: 'Stephen King',
-    year: 1982,
-}
+	title: 'The Gunslinger',
+	author: 'Stephen King',
+	year: 1982,
+};
 
-const {title, author} = book;
+const { title, author } = book;
 
-let myBook = {title, author};
+let myBook = { title, author };
 
 console.log(myBook);

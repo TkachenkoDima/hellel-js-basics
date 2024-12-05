@@ -7,10 +7,10 @@
 // Виведіть оновлений об'єкт person в консоль.
 
 const person = {
-    firstName : 'Kek',
-    lastName : 'Ololoev',
-    age : 30,
-}
+	firstName: 'Kek',
+	lastName: 'Ololoev',
+	age: 30,
+};
 
 person.email = 'kek@ololo.ev';
 

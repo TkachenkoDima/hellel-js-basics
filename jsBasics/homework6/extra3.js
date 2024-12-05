@@ -4,13 +4,13 @@
 // Write a code that gives out the total amount for different daysd).
 
 function rentalCarCost(days) {
-    let total = days * 40;
-    if (days >= 7) {
-        return total - 50;
-    } else if (days >= 3) {
-        return total - 20;
-    }
-    return total;
+	let total = days * 40;
+	if (days >= 7) {
+		return total - 50;
+	} else if (days >= 3) {
+		return total - 20;
+	}
+	return total;
 }
 
-console.log(`Ren car total: ${rentalCarCost(7)} $`); 
+console.log(`Ren car total: ${rentalCarCost(7)} $`);
