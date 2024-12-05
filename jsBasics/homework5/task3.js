@@ -7,40 +7,39 @@
 let number = 4;
 
 for (let i = 1; i <= 10; i++) {
-    console.log(`${number} x ${i} = ${number * i}`);
+	console.log(`${number} x ${i} = ${number * i}`);
 }
 console.log('---------------------');
 
 let i = 1;
 while (i <= 10) {
-    console.log(`${number} x ${i} = ${number * i}`);
-    i++;
+	console.log(`${number} x ${i} = ${number * i}`);
+	i++;
 }
 console.log('---------------------');
-
 
 //Then I was bored and decided to make it interactive
 import readline from 'readline';
 
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+	input: process.stdin,
+	output: process.stdout,
 });
 
 const askQuestion = () => {
-    rl.question('Enter a number to get the multiplication table: ', (input) => {
-        const number = parseInt(input.trim());
+	rl.question('Enter a number to get the multiplication table: ', (input) => {
+		const number = parseInt(input.trim());
 
-        if (isNaN(number) || number < 1) { 
-            console.log('Please enter a valid number.');
-        } else {
-            for (let i = 1; i <= 10; i++) {
-                console.log(`${number} x ${i} = ${number * i}`);
-            }
-        }
+		if (isNaN(number) || number < 1) {
+			console.log('Please enter a valid number.');
+		} else {
+			for (let i = 1; i <= 10; i++) {
+				console.log(`${number} x ${i} = ${number * i}`);
+			}
+		}
 
-        rl.close();
-    });
+		rl.close();
+	});
 };
 
 askQuestion();

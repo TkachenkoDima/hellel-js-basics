@@ -5,10 +5,10 @@
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
 
 function isEven(n) {
-    if (n % 1 !== 0) {
-        return false;
-    }
-    return n % 2 === 0;
+	if (n % 1 !== 0) {
+		return false;
+	}
+	return n % 2 === 0;
 }
 
 console.log('Is number even?', isEven(44));

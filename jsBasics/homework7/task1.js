@@ -6,19 +6,19 @@
 // Викличте функцію handleNum і передайте в якості аргументів довільне число і дві функції які ви створили раніше
 
 function handleNum(number, handleEven, handleOdd) {
-    if (number % 2 === 0) {
-        handleEven();
-    } else {
-        handleOdd();
-    }
-}   
+	if (number % 2 === 0) {
+		handleEven();
+	} else {
+		handleOdd();
+	}
+}
 
 function handleEven() {
-    console.log('Number is even');
+	console.log('Number is even');
 }
 
 function handleOdd() {
-    console.log('Number is odd');
+	console.log('Number is odd');
 }
 
 handleNum(2, handleEven, handleOdd);

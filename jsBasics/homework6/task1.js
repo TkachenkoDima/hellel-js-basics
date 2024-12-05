@@ -4,14 +4,14 @@
 // Реалізуйте функцію трьома способами (function declaration, function expression, arrow function)
 
 function rectangleAreaWithDeclaration(width, height) {
-    return width * height;
+	return width * height;
 }
 console.log('Rectangle area with function declaration: ', rectangleAreaWithDeclaration(5, 10));
 console.log('----------');
 
 const rectangleAreaWithExpression = function (width, height) {
-    return width * height;
-}
+	return width * height;
+};
 console.log('Rectangle area with function expression: ', rectangleAreaWithExpression(5, 10));
 console.log('----------');
 

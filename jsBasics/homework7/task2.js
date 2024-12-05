@@ -5,11 +5,11 @@
 // Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник.
 
 function handleNum(num) {
-    console.log(num);
-    if (num <= 0) {
-        return;
-    }
-    handleNum(num - 1);
+	console.log(num);
+	if (num <= 0) {
+		return;
+	}
+	handleNum(num - 1);
 }
 
 handleNum(8);

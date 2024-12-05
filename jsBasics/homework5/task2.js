@@ -11,21 +11,21 @@
 const averageGrade = 85;
 
 switch (true) {
-    case averageGrade < 60:
-        console.log('Not good enough');
-        break;
-    case averageGrade >= 60 && averageGrade <= 70:
-        console.log('Acceptable');
-        break;
-    case averageGrade >= 71 && averageGrade <= 80:
-        console.log('Good');
-        break;
-    case averageGrade >= 81 && averageGrade <= 90:
-        console.log('Very good');
-        break;
-    case averageGrade >= 91 && averageGrade <= 100:
-        console.log('Excellent');
-        break;
-    default:
-        console.log('Invalid grade');
+	case averageGrade < 60:
+		console.log('Not good enough');
+		break;
+	case averageGrade >= 60 && averageGrade <= 70:
+		console.log('Acceptable');
+		break;
+	case averageGrade >= 71 && averageGrade <= 80:
+		console.log('Good');
+		break;
+	case averageGrade >= 81 && averageGrade <= 90:
+		console.log('Very good');
+		break;
+	case averageGrade >= 91 && averageGrade <= 100:
+		console.log('Excellent');
+		break;
+	default:
+		console.log('Invalid grade');
 }
