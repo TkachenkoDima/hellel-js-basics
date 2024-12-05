@@ -22,36 +22,40 @@ const updatedPost = {
 	userId: 1,
 };
 
-test.describe('JSONPlaceholder API Tests', () => {
+test.describe('JSONPlaceholder API Tests', ()  => {
 	test('Create new post', async () => {
 		const response = await api.post('/posts', newPost);
+		const responseData = response.data as any;
 		expect(response.status).toBe(201);
-		expect(response.data.title).toBe(newPost.title);
-		expect(response.data.body).toBe(newPost.body);
-		expect(response.data.userId).toBe(newPost.userId);
+		expect(responseData.title).toBe(newPost.title);
+		expect(responseData.body).toBe(newPost.body);
+		expect(responseData.userId).toBe(newPost.userId);
 		console.log(response.data);
 	});
 
 	test('Get post by id', async () => {
 		const response = await api.get('/posts/1');
+		const responseData = response.data as any;
 		expect(response.status).toBe(200);
-		expect(response.data.id).toBe(1);
+		expect(responseData.id).toBe(1);
 	});
 
 	test('Get comments by post id', async () => {
-		const response = await api.get('/posts/1/comments');
+		const response = await api.get('/posts/2/comments');
+		const responseData = response.data as any;
 		expect(response.status).toBe(200);
 		expect(Array.isArray(response.data)).toBe(true);
-		expect(response.data.length).toBeGreaterThan(0);
-		expect(response.data[0]).toHaveProperty('postId', 1);
+		expect(responseData.length).toBeGreaterThan(0);
+		expect(responseData[0]).toHaveProperty('postId', 2);
 	});
 
 	test('Update post', async () => {
 		const response = await api.put('/posts/1', updatedPost);
+		const responseData = response.data as any;
 		expect(response.status).toBe(200);
-		expect(response.data.title).toBe(updatedPost.title);
-		expect(response.data.body).toBe(updatedPost.body);
-		expect(response.data.userId).toBe(updatedPost.userId);
+		expect(responseData.title).toBe(updatedPost.title);
+		expect(responseData.body).toBe(updatedPost.body);
+		expect(responseData.userId).toBe(updatedPost.userId);
 	});
 
 	test('Delete post', async () => {
