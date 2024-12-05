@@ -8,8 +8,8 @@ export default [
 			'no-unused-vars': 'off',
 			'no-undef': 'off',
 			'no-console': 'off',
-			quotes: ['warn', 'single'],
-			semi: ['warn', 'always'],
+			'quotes': ['warn', 'single'],
+			'semi': ['warn', 'always'],
 		},
 	},
 ];
