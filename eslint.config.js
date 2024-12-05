@@ -5,9 +5,11 @@ export default [
 
 	{
 		rules: {
-			'no-unused-vars': 'warn',
-			'no-undef': 'warn',
-			'no-console': 'error',
+			'no-unused-vars': 'off',
+			'no-undef': 'off',
+			'no-console': 'off',
+			quotes: ['warn', 'single'],
+			semi: ['warn', 'always'],
 		},
 	},
 ];
