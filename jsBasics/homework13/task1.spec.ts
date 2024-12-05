@@ -22,7 +22,7 @@ const updatedPost = {
 	userId: 1,
 };
 
-test.describe('JSONPlaceholder API Tests', ()  => {
+test.describe('JSONPlaceholder API Tests', () => {
 	test('Create new post', async () => {
 		const response = await api.post('/posts', newPost);
 		const responseData = response.data as any;

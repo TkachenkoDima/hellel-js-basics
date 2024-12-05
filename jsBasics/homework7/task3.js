@@ -12,7 +12,7 @@ function divide(numerator, denominator) {
 			throw new Error('One of the arguments is not a number');
 		}
 		if (denominator === 0) {
-			throw new Error('Can\'t divide by zero');
+			throw new Error("Can't divide by zero");
 		}
 		return numerator / denominator;
 	};
