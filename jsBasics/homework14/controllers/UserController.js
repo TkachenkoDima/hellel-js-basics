@@ -1,7 +1,9 @@
-const api = require('./BaseController');
+const BaseController = require('./BaseController');
 
-const login = async (username, password) => {
-  return api.post('/Account/v1/Login', { userName: username, password });
-};
+class UserController extends BaseController {
+  async login(username, password) {
+    return this.post('/Account/v1/Login', { userName: username, password });
+  }
+}
 
-module.exports = { login };
+module.exports = UserController;
